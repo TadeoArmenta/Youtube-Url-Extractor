@@ -117,13 +117,13 @@ public class YoutubeStreamExtractor extends AsyncTask<String,Void,Void> {
 				parseLiveUrls(playerResponse.getStreamingData());
 			} else {
 				StreamingData sd=playerResponse.getStreamingData();
-				LogUtils.log("sizea= " + sd.getAdaptiveFormats().length);
-				LogUtils.log("sizem= " + sd.getFormats().length);
+				//LogUtils.log("sizea= " + sd.getAdaptiveFormats().length);
+				//LogUtils.log("sizem= " + sd.getFormats().length);
 
 				adaptiveMedia =	parseUrls(sd.getAdaptiveFormats());
 				mixedMedia =	parseUrls(sd.getFormats());
-				LogUtils.log("sizeXa= " + adaptiveMedia.size());
-				LogUtils.log("sizeXm= " + mixedMedia.size());
+				//LogUtils.log("sizeXa= " + adaptiveMedia.size());
+				//LogUtils.log("sizeXm= " + mixedMedia.size());
 
 			}
 		}
